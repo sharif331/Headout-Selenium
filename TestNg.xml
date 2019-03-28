@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Headout Regression Test" >
+         <listeners>
+              <listener class-name="com.utility.ExtentReporterNG"/>
+         </listeners>
+         
+ 	 	<parameters>
+			<parameter name="browser" value="chrome" />		
+			<parameter name="url" value="https://www.london-theater-tickets.com/" />	
+			<parameter name="image_disable" value="true" />	
+			<parameter name="headless" value="false" />	
+				
+	   </parameters>
+ 	<test name="Booking">
+		<classes>	
+            <class name="com.headout.theater.test.TestBooking"/>      
+		</classes>		
+	</test>
+</suite>
+
+
+
